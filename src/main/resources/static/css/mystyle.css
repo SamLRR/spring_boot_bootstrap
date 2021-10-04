@@ -1,0 +1,109 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #0099cc;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #ffffff;
+    background-color: #0099cc;
+}
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 15px; /* Increased text to enable scrolling */
+    padding: 10px 10px;
+}
+
+.main1 {
+    height: 40px;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.main1 a {
+    margin-left: 900px;
+    font-size: 15px;
+    color: #9d9d9d;
+    background-color: #000000;
+}
+
+.main1 p {
+    display: inline;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.main2 {
+    margin-left: 400px; /* Same as the width of the sidenav */
+    margin-right: 400px; /* Same as the width of the sidenav */
+    font-size: 15px; /* Increased text to enable scrolling */
+    text-align: center;
+}
+
+.col-sm-9 {
+    background-color:black;
+    color:white;
+    font-size: 25px;
+    height: 50px;
+    padding: 10px;
+}
+.col-sm-9 p{
+    display: inline;
+}
+.col-sm-3 {
+    background-color:black;
+    color:white;
+    font-size: 20px;
+    text-align:right;
+    height: 50px;
+    padding: 10px;
+}
+.modal-dialog{
+    width: 450px;
+    text-align: center;
+}
+.modal-title{
+    text-align: left;
+}
+.mb-3{
+    width:250px;
+    margin: auto;
+    background: white;
+}
+modal-header{
+    text-align: left;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 20px;
+    }
+}
+
+.form-control:valid {
+    background-color: #96d3ec !important;
+}

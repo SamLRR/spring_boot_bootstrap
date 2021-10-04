@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+<div>
+    <input type=button onClick="parent.location='role/add'"
+           value='Add new role'>
+    <input type=button onClick="parent.location='logout'"
+           value='Logout'>
+</div>
+<div>
+    <h2>Roles list</h2>
+    <table id="example" class="table table-bordered" style="width: 75%">
+        <thead>
+        <tr>
+            <th> Id</th>
+            <th> Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:if="${roles.empty}">
+            <td colspan="2"> No roles available</td>
+        </tr>
+        <tr th:each="role : ${roles}">
+            <td><span th:text="${role.getId()}"> Id </span></td>
+            <td><span th:text="${role.getName()}">First Name </span></td>
+            <td><a th:href="@{role/update/{id}(id=${role.id})}">Edit</a></td>
+            <td><a th:href="@{role/remove/{id}(id=${role.id})}">Remove</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
